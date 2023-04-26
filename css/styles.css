@@ -321,6 +321,21 @@ margin: 0 auto 48px;
 
 /* Portfolio page */
 
+.filters {
+    padding: 96px 0 120px
+}
+.filter-btns-list {
+    display: flex;
+    justify-content: center;
+    gap:24px;
+    margin-bottom: 72px
+    
+
+}
+.filter-item {
+    
+
+}
 .filters-btn {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -331,19 +346,43 @@ margin: 0 auto 48px;
     background-color:var(--background-color-gray); 
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    cursor: pointer;
+
+    padding: 12px 24px
+    
 }
 .filters-btn:hover {color:var(--background-white) ;
     background-color:var(--nav-color);
+    border: 1px solid transparent;
 }
 .filters-btn:focus {color:var(--background-white);
     background-color: var(--nav-color);
+    border: 1px solid transparent;
 }
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.project-card {
+    width: calc((100% - 48px) / 3)
+}
+
+.card-desc {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .project-name {font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:#2e2f42;
+
+    margin-bottom: 8px;
 }
 .project-desc {color:var(--text-color);
     font-size: 16px;
